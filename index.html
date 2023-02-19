@@ -7,10 +7,6 @@
         <!-- Bootstrap CSS Link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
 
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Roboto+Slab&family=Source+Serif+Pro:wght@400;600&family=Unbounded&display=swap" rel="stylesheet">
 
          <!-- Bootstrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -21,15 +17,14 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <div class="card bg-danger">
-            <div class="card-header">
-                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light bg-dark">
+        <div class="card bg-dark">
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarN" aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand logo" href="index.html">Ram</a>
+                    <div class="logo">J-APE</div>
                     <div class="collapse navbar-collapse" id="navbarN">
-                        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                        <ul class="navbar-nav ml-auto ul-marge">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#!">Home <span class="sr-only">(current)</span></a>
                              </li>
@@ -41,14 +36,13 @@
                             </li>
                             <li>
                                 <a class="nav-link" href="contact.html">Contact</a>
-                            </li>       
+                            </li>    
                         </ul>
                     </div>
                 </nav>
-            </div>
 
              <!-- start card body -->
-            <div class="card-body bg-dark text-light min-vh-100">
+            <div class="card-body bg-color text-light min-vh-100 ">
                 <div class="mt-2 mb-2 container">
                     <div class="row">
                         <div class="h-top col-md-1 order-3 order-md-1">
@@ -59,17 +53,17 @@
                            </ul>
                         </div>
                         <div class="h-top col-md-6 order-2 order-md-1">
-                            <h2>Hello, I'm</h2>
-                            <h2 class="f-name">Joram Ape</h2>
-                            <h5 class="pt-2">This is my official website to show all my
-                               Details and work experience in web development
-                            </h5>
+                            <h2 class="top-name">Hello, I'm</h2>
+                            <h2 class="fullname">Joram Ape</h2>
+                            <p class="paragraph">This is my official website to show all my 
+                                <span>Details and work experience in web development</span>
+                            </p>
                             <div class="pt-4">
-                                <a class="btn btn-danger btn-md" target="_blank" href="./img/resume Joram.pdf">Download CV</a>
+                                <a class="btn bttn" target="_blank" href="./img/resume Joram.pdf">Download CV</a>
                             </div>
                         </div>
-                        <div class="col-md-5 order-1 order-md-2">
-                            <img class="img-fluid rounded-pill" src="img/me.png">
+                        <div class="col-md-5 order-1 order-md-2 pt-5">
+                             <img class="img-fluid rounded-pill con-back" src="img/me.png">
                         </div>
                     </div>
                 </div>
@@ -77,12 +71,13 @@
             <!-- end card body -->
 
             <!-- start footer -->
-           <div class="pt-3 pb-3 text-center bg-secondary text-light p-1">
+           <div class="pt-3 pb-3 ml-4 shadow text-light ">
                  <span>Terms of Service</span>
                  <span>|</span>
                  <span>Privacy Policy</span>
                   <span>|</span>
                  <span>&copy;2023 All Rights Reserved</span>
+                 <span class="Version"> version 1.0</span>
             </div>
         </div>
 
