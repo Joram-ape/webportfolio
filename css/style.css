@@ -16,6 +16,7 @@
 	margin-left: 15%;
 }
 .ul-marge {
+	text-indent: 50px;
 	font-size: 18px;
 	letter-spacing: 0.1rem;
 	margin-right: 15%;
@@ -38,8 +39,9 @@
 }
 
 .paragraph {
-
-       font-size: 20px;
+	text-indent: 10px;
+	font-size: 20px;
+	font-family: "Lucida Console", "Courier New", monospace;
 
 
 }
@@ -55,7 +57,7 @@
 	
 	background-color:#C89047;
 }
-.bttn {
+.btn-download {
 	list-style-type: none;
 	background-color: #336589;
 	color: white;
@@ -66,6 +68,7 @@
 	border-radius: 50px;
 	border: none;
 }
+
 
 .bg-color {
 	background-color: gray;
@@ -80,4 +83,12 @@
 }
 .pt {
 	margin-top: 5%;
+}
+
+.Paragraph {
+
+	text-indent: 30px;
+	font-size: 20px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	padding-top: 10px;
 }
