@@ -1,94 +1,196 @@
-
-
 .h-top {
-	padding-top: 20%;
+  padding-top: 20%;
 }
-
 
 .logo {
-	display: flex;
-	font-size: 40px;
-	font-weight: 800;
-	color: #C0BFBB;
-	letter-spacing: 3px;
-	cursor: pointer;
-	text-transform: uppercase;
-	margin-left: 15%;
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: #c0bfbb;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 15%;
 }
 .ul-marge {
-	text-indent: 50px;
-	font-size: 18px;
-	letter-spacing: 0.1rem;
-	margin-right: 15%;
-	line-height: 5px;
-
+  text-indent: 50px;
+  font-size: 18px;
+  line-height: 5px;
 }
 
 .fullname {
-	 display: block;
-	 font-size: 5em;
-	 letter-spacing: 0.1rem;
-	 font-weight: 900;
-	 color: #FFFFFF;
-
+  display: block;
+  font-size: 5em;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  color: #ffffff;
 }
 .side-i {
-	list-style-type: none;
-	font-size: 2rem;
-	padding: 1rem;
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .paragraph {
-	text-indent: 50px;
-	font-size: 20px;
-	font-family: "Lucida Console", "Courier New", monospace;
-
-
+  text-indent: 50px;
+  font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .top-name {
-	display: block;
-	position: relative;
-	font-size: 35px;
-	letter-spacing: 5px;
-	color: #3d535f;
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
 }
 
-.con-back {
-	
-	background-color:#C89047;
+.image-back {
+  background: rgb(15, 12, 4);
+  background: -moz-linear-gradient(
+    108deg,
+    rgba(15, 12, 4, 0.8785714969581583) 48%,
+    rgba(9, 8, 8, 1) 76%
+  );
+  background: -webkit-linear-gradient(
+    108deg,
+    rgba(15, 12, 4, 0.8785714969581583) 48%,
+    rgba(9, 8, 8, 1) 76%
+  );
+  background: linear-gradient(
+    108deg,
+    rgba(15, 12, 4, 0.8785714969581583) 48%,
+    rgba(9, 8, 8, 1) 76%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c04",endColorstr="#090808",GradientType=1);
 }
 .btn-download {
-	list-style-type: none;
-	background-color: #336589;
-	color: white;
-	font-size: 0.9rem;
-	font-weight: bold;
-	padding:  0.7rem;
-	width: 40%;
-	border-radius: 50px;
-	border: none;
+  list-style-type: none;
+  background-color: #336589;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.7rem;
+  width: 40%;
+  border-radius: 50px;
+  border: none;
 }
-
 
 .bg-color {
-	background-color: gray;
+  background-color: gray;
 }
-.bg-color   {
-	min-height: 50vh;
-	background-color: rgba(0, 0, 0,0.5);
+.bg-color {
+  min-height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .Version {
-	float: right;
-	margin-right: 100px;
+  float: right;
+  margin-right: 100px;
 }
 .pt {
-	margin-top: 5%;
+  margin-top: 5%;
 }
 
 .Paragraph {
-
-	text-indent: 30px;
-	font-size: 20px;
-	font-family: "Lucida Console", "Courier New", monospace;
-	padding-top: 10px;
+  text-indent: 30px;
+  font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding-top: 10px;
 }
+
+.marginTops {
+  margin-top: 200px;
+}
+
+.homeBackColor {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    108deg,
+    rgba(0, 0, 0, 1) 12%,
+    rgba(161, 117, 18, 1) 63%
+  );
+  transition: background-color 0.3s; /* Add transition for a smooth effect */
+}
+
+.homeBackColor:hover {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.nameText {
+	white-space: nowrap; 
+	overflow: hidden; 
+	border-right: 1px solid #000; 
+	animation: typing 10s steps(40) infinite;
+  }
+
+  @keyframes typing {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 45%;
+	}
+  }
+
+@media (max-width: 375px) {
+  .nameText {
+    margin-left: 100px;
+    margin-top: 20px;
+	font-size: xx-large;
+	white-space: nowrap; 
+	overflow: hidden; 
+	border-right: 1px solid #000; 
+	animation: typing 10s steps(40) infinite;
+	
+  }
+
+  .contactColmn {
+	float: left; 
+  }
+
+  uul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+  }
+  
+  li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+  }
+  
+  li a.active {
+	padding: 10px;
+	background-color: #0e0c0c4f;
+	color: white;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+  }
+  
+}
+
+.certificates-section {
+	padding: 50px 0;
+	text-align: center;
+  }
+
+  .certificate {
+	margin-bottom: 30px;
+  }
+
+  .certificate img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  .certificate-title {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+  }
