@@ -1,3 +1,10 @@
+.kode-mono {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400 – 700;
+  font-style: italic;
+}
+
 .h-top {
   padding-top: 20%;
 }
@@ -65,7 +72,7 @@
 }
 .btn-download {
   list-style-type: none;
-  background-color: #336589;
+  background-color: #750E21;
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
@@ -101,96 +108,127 @@
   margin-top: 200px;
 }
 
-.homeBackColor {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    108deg,
-    rgba(0, 0, 0, 1) 12%,
-    rgba(161, 117, 18, 1) 63%
-  );
-  transition: background-color 0.3s; /* Add transition for a smooth effect */
+.homePage {
+  background: #191919;
+  height: 100vh;
 }
-
-.homeBackColor:hover {
-  background-color: rgba(0, 0, 0, 0.74);
+.homePage {
+  height: 100vh;
 }
-
+.namePage {
+  color: #E3651D;
+}
 .nameText {
-	white-space: nowrap; 
-	overflow: hidden; 
-	border-right: 1px solid #000; 
-	animation: typing 10s steps(40) infinite;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #000;
+  animation: typing 10s steps(40) infinite;
+}
 
-  @keyframes typing {
-	from {
-	  width: 0;
-	}
-	to {
-	  width: 45%;
-	}
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 105%;
+  }
+}
 
 @media (max-width: 375px) {
   .nameText {
     margin-left: 100px;
     margin-top: 20px;
-	font-size: xx-large;
-	white-space: nowrap; 
-	overflow: hidden; 
-	border-right: 1px solid #000; 
-	animation: typing 10s steps(40) infinite;
-	
+    font-size: xx-small;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    animation: typing 10s steps(40) infinite;
   }
 
   .contactColmn {
-	float: left; 
+    float: left;
   }
 
   uul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: #f1f1f1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
   }
-  
+
   li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
   }
-  
+
   li a.active {
-	padding: 10px;
-	background-color: #0e0c0c4f;
-	color: white;
+    padding: 10px;
+    background-color: #0e0c0c4f;
+    color: white;
   }
-  
+
   li a:hover:not(.active) {
-	background-color: #555;
-	color: white;
+    background-color: #555;
+    color: white;
   }
-  
 }
 
 .certificates-section {
-	padding: 50px 0;
-	text-align: center;
-  }
+  padding: 50px 0;
+  text-align: center;
+}
 
-  .certificate {
-	margin-bottom: 30px;
-  }
+.certificate {
+  margin-bottom: 30px;
+}
 
-  .certificate img {
-	max-width: 100%;
-	height: auto;
-  }
+.certificate img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .certificate-title {
-	margin-top: 10px;
-	font-size: 18px;
-	font-weight: bold;
-  }
+.imageContainer{
+  position: relative;
+ margin-top: 150px;
+}
+
+.circle {
+  position: absolute; 
+  top: 150px;
+  width: 420px; 
+  height: 350px; 
+  border-radius: 50%; 
+  overflow: hidden;
+  position: relative; 
+  background-color: rgb(227, 101, 29);
+}
+
+.imgPhoto {
+  cursor: pointer;
+  position: absolute; 
+  display: block; 
+  object-fit: cover; 
+  top: -2px;
+  left: -28px;
+  border-radius: 50%;
+}
+
+.homePageSide{
+ padding-top: 200px;
+}
+.aboutPage {
+  height: 80vh;
+}
+.aboutTop{
+  top: 100px;
+}
+.aboutColor {
+  background-color: #191919;
+}
+
+
+
+
