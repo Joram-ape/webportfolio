@@ -220,7 +220,7 @@
  padding-top: 200px;
 }
 .aboutPage {
-  height: 80vh;
+  height: 100vh;
 }
 .aboutTop{
   top: 100px;
@@ -228,7 +228,21 @@
 .aboutColor {
   background-color: #191919;
 }
+.btnPrimary {
+  background-color: #750E21;
+  color: #c0bfbb;
+}
 
+.progressBar {
+  background-color: #BED754;
+}
+.portfolioPage {
+  height: 100vh;
+  top: 200px;
+}
+.carouselImage {
+  height: 500px;
+}
 
 
 
