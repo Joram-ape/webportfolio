@@ -13,3 +13,32 @@ document.addEventListener('scroll', function() {
     }
 
 });
+
+const portfolioNavigate = () => {
+  let sections = ["project1", "project2", "project3", "project4"];
+  sections.forEach((sectionId) => {
+    let sectionSelect = document.getElementById(sectionId);
+    if(sectionSelect){
+      sectionSelect.style.display = "none";
+    }
+  })
+}
+
+const onclickNavigation0 = () => {
+  portfolioNavigate();
+  let project1Content0 = document.getElementById("project1");
+  if(project1Content0) {
+    project1Content0.style.display = "block";
+    project1Content0.class = "active";
+  }
+}
+
+const onclickNavigation1 = () => {
+  portfolioNavigate();
+  let project1Content1 = document.getElementById("project2");
+  if(project1Content1) {
+    project1Content1.style.display = "block";
+    project1Content1.class = "active";
+  }
+}
+
