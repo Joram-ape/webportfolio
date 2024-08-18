@@ -1,5 +1,33 @@
-.kode-mono {
+body {
   font-family: "Kode Mono", monospace;
+  background-color: #191919;
+  color: #c0bfbb;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #e3651d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #750e21;
+}
+
+.kode-mono {
   font-optical-sizing: auto;
   font-weight: 400 – 700;
   font-style: italic;
@@ -19,11 +47,6 @@
   text-transform: uppercase;
   margin-left: 15%;
 }
-.ul-marge {
-  text-indent: 50px;
-  font-size: 18px;
-  line-height: 5px;
-}
 
 .fullname {
   display: block;
@@ -31,11 +54,6 @@
   letter-spacing: 0.1rem;
   font-weight: 900;
   color: #ffffff;
-}
-.side-i {
-  list-style-type: none;
-  font-size: 2rem;
-  padding: 1rem;
 }
 
 .paragraph {
@@ -72,7 +90,7 @@
 }
 .btn-download {
   list-style-type: none;
-  background-color: #750E21;
+  background-color: #750e21;
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
@@ -104,19 +122,13 @@
   padding-top: 10px;
 }
 
-.marginTops {
-  margin-top: 200px;
-}
-
 .homePage {
   background: #191919;
   height: 100vh;
 }
-.homePage {
-  height: 100vh;
-}
+
 .namePage {
-  color: #E3651D;
+  color: #e3651d;
 }
 .nameText {
   white-space: nowrap;
@@ -145,11 +157,7 @@
     animation: typing 10s steps(40) infinite;
   }
 
-  .contactColmn {
-    float: left;
-  }
-
-  uul {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -190,100 +198,54 @@
   height: auto;
 }
 
-.imageContainer{
+.imageContainer {
   position: relative;
- margin-top: 150px;
+  margin-top: 50px;
 }
 
 .circle {
-  position: absolute; 
+  position: absolute;
   top: 150px;
-  width: 420px; 
-  height: 350px; 
-  border-radius: 50%; 
+  width: 420px;
+  height: 350px;
+  border-radius: 50%;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   background-color: rgb(227, 101, 29);
 }
 
-.imgPhoto {
+.img-photo {
   cursor: pointer;
-  position: absolute; 
-  display: block; 
-  object-fit: cover; 
+  position: absolute;
+  display: block;
+  object-fit: cover;
   top: -2px;
   left: -28px;
   border-radius: 50%;
 }
 
-.homePageSide{
- padding-top: 200px;
+.homePageSide {
+  padding-top: 100px;
 }
 .aboutPage {
   height: 100vh;
 }
-.aboutTop{
+
+.aboutPage-top {
   top: 100px;
 }
-.aboutColor {
-  background-color: #191919;
-}
-.btnPrimary {
-  background-color: #750E21;
+
+.btn-primary {
+  background-color: #750e21;
   color: #c0bfbb;
 }
 
 .progressBar {
-  background-color: #BED754;
+  background-color: #bed754;
 }
 .portfolioPage {
   background-color: #3d535f;
   height: 100vh;
   top: 200px;
   padding-top: 100px;
-}
-.carousel {
-  position: relative;
-  max-width: 600px; /* Adjust max-width as needed */
-  margin: 0 auto; /* Center the carousel horizontally */
-}
-
-.carousel-inner {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel-item {
-  width: 100%;
-  transition: transform 0.5s ease;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 2;
-}
-
-.carousel-prev {
-  left: 0;
-}
-
-.carousel-next {
-  right: 0;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
 }

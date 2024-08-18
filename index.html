@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="em">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joram Ape | Home</title>
 
   <!-- Bootstrap CSS Link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -16,15 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
 
-  <title>Joram Ape | Home</title>
-
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
   <div class="flex-wrap bg-dark">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow bg-dark">
+    <nav id="hide" class="navbar sticky-top navbar-expand-lg navbar-dark shadow bg-dark">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarN"
         aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -76,9 +75,9 @@
       <div class="homePage">
         <div class="container">
           <div class="row">
-            <div class="imageContainer mt-4 col-md-6 d-flex">
+            <div class="img-container mt-4 col-md-6 d-flex">
               <div class="circle mt-5"></div>
-              <img src="img/me.png" class="imgPhoto" />
+              <img src="img/me.png" class="img-photo" />
             </div>
 
             <div class="col-md-6 d-flex align-items-center homePageSide text-light">
@@ -87,15 +86,15 @@
                 <h1 class="display1 nameText font-weight-bolder">
                   Fron-end and Back-end developer
                 </h1>
-                <blockquote class="blockquote text-right mt-5">
-                  <p class="kode-mono">
-                    "Programs must be written for people to read, and only
-                    incidentally for machines to execute."
-                  </p>
-                  <footer class="blockquote-footer">
-                    Harold <cite title="Source Title">Abelson</cite>
-                  </footer>
-                </blockquote>
+
+                <p class="kode-mono">
+                  "Programs must be written for people to read, and only
+                  incidentally for machines to execute."
+                </p>
+                <footer class="blockquote-footer">
+                  Harold <cite title="Source Title">Abelson</cite>
+                </footer>
+
               </div>
             </div>
           </div>
@@ -123,11 +122,11 @@
                   environments and look forward to expanding my skills in web
                   development.
                 </p>
-                <a href="#" class="btn btnPrimary">Download CV</a>
+                <a href="#" class="btn-primary">Download CV</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 aboutTop">
+          <div class="col-sm-6 aboutPage-top">
             <div class="card aboutColor mt-5">
               <div class="card-body">
                 <p>React.js</p>
@@ -194,16 +193,16 @@
               </ul>
             </div>
             <div class="card-body">
-            <div id="project1">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div id="project2" style="display: none;">
-              <h5 class="card-title">Special title treatment111</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <div id="project1">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              <div id="project2" style="display: none;">
+                <h5 class="card-title">Special title treatment111</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
           </div>
         </div>
@@ -266,8 +265,8 @@
     });
   </script>
   <script>
-    $(document).ready(function(){
-      $(".nav a").click(function() {
+    $(document).ready(function () {
+      $(".nav a").click(function () {
         $(".nav a").removeClass("active");
         $(this).addClass("active");
       })
