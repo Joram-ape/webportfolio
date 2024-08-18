@@ -137,51 +137,22 @@ a:hover {
   animation: typing 10s steps(40) infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 105%;
-  }
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-@media (max-width: 375px) {
-  .nameText {
-    margin-left: 100px;
-    margin-top: 20px;
-    font-size: xx-small;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid #000;
-    animation: typing 10s steps(40) infinite;
-  }
+li a.active {
+  padding: 10px;
+  background-color: #0e0c0c4f;
+  color: white;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-  }
-
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-
-  li a.active {
-    padding: 10px;
-    background-color: #0e0c0c4f;
-    color: white;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
 .certificates-section {
@@ -248,4 +219,25 @@ a:hover {
   height: 100vh;
   top: 200px;
   padding-top: 100px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 105%;
+  }
+}
+
+@media (max-width: 375px) {
+  .nameText {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: xx-small;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    animation: typing 10s steps(40) infinite;
+  }
 }
