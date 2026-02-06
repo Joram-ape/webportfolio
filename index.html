@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="em">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -24,77 +24,109 @@
 <body>
   <div class="flex-wrap bg-dark">
     <nav id="hide" class="navbar sticky-top navbar-expand-lg navbar-dark shadow bg-dark">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarN"
-        aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="logo">
-        <img class="img-fluid mr-5" alt="Joram." />
-      </div>
-      <div class="collapse navbar-collapse" id="navbarN">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutMe">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#email-section">Contact<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certificate">Certificate<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/joram.leguatonape" target="_blank"><i
-                    class="bi bi-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://ph.linkedin.com/in/joram-ape-52061615b" target="_blank"><i
-                    class="bi bi-linkedin"></i></a>
-              </li>
-              <li class="nav-item">
-                <a style="width: 100px" class="nav-link" href="https://discord.com/accessibility" target="_blank"><i
-                    class="bi bi-discord"></i></a>
-              </li>
-            </ul>
+      <div class="container">
+        <a class="navbar-brand logo" href="#home">
+          <span class="logo-text">Joram.</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarN"
+          aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarN">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#email-section">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link social-icon" href="https://www.facebook.com/joram.leguatonape" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="nav-link social-icon" href="https://ph.linkedin.com/in/joram-ape-52061615b" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="nav-link social-icon" href="https://github.com/joram-ape" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
           </div>
-        </span>
+        </div>
       </div>
     </nav>
 
+    <!-- Security Notice -->
+    <div class="security-notice">
+      <div class="container">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <i class="bi bi-shield-check mr-2"></i>
+          <strong>Security Notice:</strong> This portfolio is for legitimate professional networking and job opportunities only.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="security-tips">
+          <h5 class="text-light mb-3"><i class="bi bi-info-circle mr-2"></i>Security Best Practices:</h5>
+          <ul class="list-unstyled text-light">
+            <li><i class="bi bi-check-circle text-success mr-2"></i>Verify my identity through multiple channels (LinkedIn: <a href="https://ph.linkedin.com/in/joram-ape-52061615b" target="_blank" class="text-primary">joram-ape-52061615b</a>)</li>
+            <li><i class="bi bi-check-circle text-success mr-2"></i>Confirm job opportunities through official company channels</li>
+            <li><i class="bi bi-check-circle text-success mr-2"></i>Never share sensitive information (passwords, financial data) via email</li>
+            <li><i class="bi bi-check-circle text-success mr-2"></i>Be cautious of unsolicited offers requiring payment or personal information</li>
+            <li><i class="bi bi-check-circle text-success mr-2"></i>Report suspicious activities to authorities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
     <!-- Home Section -->
     <section id="home">
       <div class="homePage">
         <div class="container">
-          <div class="row">
-            <div class="img-container mt-4 col-md-6 d-flex">
-              <div class="circle mt-5"></div>
-              <img src="img/me.png" class="img-photo" />
+          <div class="row align-items-center min-vh-100">
+            <div class="img-container col-md-6 d-flex justify-content-center">
+              <div class="circle"></div>
+              <img src="img/me.png" class="img-photo" alt="Joram Ape" />
             </div>
 
             <div class="col-md-6 d-flex align-items-center homePageSide text-light">
               <div class="flex-fill bd-highlight">
-                <p class="h6 namePage">Hi There, I'm Joram Ape</p>
-                <h1 class="display1 nameText font-weight-bolder">
-                  Fron-end and Back-end developer
-                </h1>
+                <div class="animate-fade-in-up">
+                  <p class="h6 namePage">Hi There, I'm</p>
+                  <h1 class="display1 nameText font-weight-bolder">
+                    Joram Ape
+                  </h1>
+                  <h2 class="h3 text-primary mb-4">Fullstack Web Developer</h2>
 
-                <p class="kode-mono">
-                  "Programs must be written for people to read, and only
-                  incidentally for machines to execute."
-                </p>
-                <footer class="blockquote-footer">
-                  Harold <cite title="Source Title">Abelson</cite>
-                </footer>
+                  <p class="kode-mono mb-4">
+                    "Programs must be written for people to read, and only
+                    incidentally for machines to execute."
+                  </p>
+                  <footer class="blockquote-footer mb-4">
+                    Harold <cite title="Source Title">Abelson</cite>
+                  </footer>
 
+                  <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary btn-lg mr-3">View My Work</a>
+                    <a href="#email-section" class="btn btn-outline-primary btn-lg">Get In Touch</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -110,56 +142,43 @@
             <h2 class="">Know More About me</h2>
             <div class="card bg-color">
               <div class="card-body">
-                <h5 class="card-title">Hello, I,m Joram Ape</h5>
+                <h5 class="card-title">Hello, I'm Joram Ape</h5>
                 <p class="em">
-                  I'm a web developer with almost a year of experience. I
-                  specialize in front-end and back-end technologies like HTML,
-                  CSS, and JavaScript, including frameworks like React.js,
-                  laravel, tailwindcss. On the back-end, I work with Node.js
-                  and MongoDB, Php Mysql. I'm passionate about creating
-                  visually appealing, user-friendly interfaces and staying
-                  updated on industry trends. I thrive in collaborative
-                  environments and look forward to expanding my skills in web
-                  development.
+                 Results-oriented Full-Stack Web Developer with over 3 years of experience designing and developing scalable, user-focused web applications. Skilled in Laravel, Vue.js, React.js, Node.js, and modern frontend frameworks. Experienced in REST API development, database design, and system integration. Committed to creating effective digital solutions that address real business challenges while ensuring high-quality user experiences.
                 </p>
-                <a href="#" class="btn btn-primary">Download CV</a>
+                <a href="img/Joram Ape resume .pdf" class="btn btn-primary" download>Download CV</a>
               </div>
             </div>
           </div>
           <div class="col-sm-6 aboutPage-top">
             <div class="card aboutColor mt-5 bg-color">
               <div class="card-body">
-                <p>React.js</p>
+                <p>Vue.js</p>
                 <div class="progress">
+                  <div class="progressBar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <p>Docker</p>
+                <div class="progress mt-2">
+                  <div class="progressBar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <p>React.js</p>
+                <div class="progress mt-2">
                   <div class="progressBar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <p>express.js</p>
-                <div class="progress mt-2">
-                  <div class="progressBar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                <p>laravel</p>
+                <p>Laravel</p>
                 <div class="progress mt-2">
                   <div class="progressBar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <p>Php</p>
+                <p>PHP</p>
                 <div class="progress mt-2">
                   <div class="progressBar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <p>css</p>
-                <div class="progress mt-2">
-                  <div class="progressBar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                <p>HTML</p>
-                <div class="progress mt-2">
-                  <div class="progressBar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                <p>MSQL</p>
+                <p>MySQL</p>
                 <div class="progress mt-2">
                   <div class="progressBar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
                     aria-valuemax="100"></div>
@@ -171,108 +190,439 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolioPage" id="portfolio">
+    <!-- Work Experience Section -->
+    <section class="bg-dark text-light" id="experience">
       <div class="container">
-        <div class="">
-          <h2 class="text-center text-light font-weight-bolder">Portfolio</h2>
+        <div class="text-center mb-5">
+          <h2 class="text-light font-weight-bolder">Work Experience</h2>
+          <p class="text-muted">My professional journey</p>
         </div>
-        <div class="row">
-          <div class="card text-center w-100">
-            <div class="card-header">
-              <ul class="nav nav-pills card-header-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="#project1" onclick="onclickNavigation0()">Project I</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#project2" onclick="onclickNavigation1()">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <div id="project1">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card bg-color">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Software Engineer 1</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Asiagate Networks Inc.</h6>
+                  <p class="text-muted"><small>February 12, 2025 - Present</small></p>
+                  <ul class="card-text">
+                    <li>Vue.js (Vite) development with Tailwind CSS</li>
+                    <li>Laravel 10 REST API development with MySQL and Docker Compose</li>
+                    <li>Database design and migrations</li>
+                    <li>JasperReports for PDF/Excel automation</li>
+                    <li>Codeigniter web application development</li>
+                  </ul>
+                </div>
               </div>
-              <div id="project2" style="display: none;">
-                <h5 class="card-title">Special title treatment111</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card bg-color">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Software Engineer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Thy Web Development Inc.</h6>
+                  <p class="text-muted"><small>June 5, 2023 - February 12, 2025</small></p>
+                  <ul class="card-text">
+                    <li>Frontend development with React.js and Tailwind CSS</li>
+                    <li>Backend development with Laravel, Node.js, and PHP</li>
+                    <li>Database integration using Firebase and MySQL</li>
+                    <li>Dockerized development environment and REST API integration</li>
+                    <li>Adobe plugin and extension development (UXP, CEP)</li>
+                    <li>Version control using Git and GitHub</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card bg-color">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">IT Technician</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">New City Builder's Inc.</h6>
+                  <p class="text-muted"><small>June 7, 2022 - May 19, 2023</small></p>
+                  <ul class="card-text">
+                    <li>Providing technical support and maintained all computer systems</li>
+                    <li>Repairing and replacing equipment as necessary</li>
+                    <li>Installing hardware and software applications and CCTV</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card bg-color">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Hardware System Administrator</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Gaisano Grand Mall</h6>
+                  <p class="text-muted"><small>November 12, 2019 - June 2022</small></p>
+                  <ul class="card-text">
+                    <li>Installing, configuring and maintaining computers</li>
+                    <li>Install and configure computer hardware and applications</li>
+                    <li>Monitor and maintain computer POS systems and networks</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  </section>
+    </section>
 
-  <section class="bg-dark text-light" id="email-section">
-    <div class="container">
-      <h2 class="text-center pt-4">Contact Us</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
-        <div class="col p-5">
-          <form>
-            <div class="form-group">
-              <label for="senderName">Your Name</label>
-              <input type="text" class="form-control" id="senderName" placeholder="Enter your name" />
+    <!-- Education Section -->
+    <section class="bg-color text-light" id="education">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-light font-weight-bolder">Education</h2>
+          <p class="text-muted">My academic background and certifications</p>
+        </div>
+        
+        <div class="row">
+          <!-- Education 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card bg-color h-100">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Zuitt Web Developer Program</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Full Stack Web Development</h6>
+                <p class="text-muted"><small>January 09 - April 11, 2023</small></p>
+                <p class="card-text">Completed comprehensive full-stack web development training program covering modern web technologies and best practices.</p>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="senderEmail">Your Email</label>
-              <input type="email" class="form-control" id="senderEmail" placeholder="Enter your email" />
+          </div>
+          
+          <!-- Education 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card bg-color h-100">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Bachelor of Science in Information Technology</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Northern Negros State College of Science and Technology</h6>
+                <p class="text-muted"><small>2014 - 2018</small></p>
+                <p class="card-text">Graduated with a degree in Information Technology, focusing on software development and systems analysis.</p>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="emailMessage">Your Message</label>
-              <textarea class="form-control" id="emailMessage" rows="4" placeholder="Enter your message"></textarea>
+          </div>
+          
+          <!-- Education 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card bg-color h-100">
+              <div class="card-body">
+                <h5 class="card-title text-primary">National Certificate II</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer System Servicing</h6>
+                <p class="text-muted"><small>Issued: January 16, 2018</small></p>
+                <p class="card-text">Universal School of Applied Technology of Sagay City, Inc. - Certified in computer hardware and software servicing.</p>
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary d-flex justify-content-end">
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- start footer -->
-  <div class="pt-3 pb-3 ml-4 shadow text-light">
-    <span>Personal Portfolio</span>
-    <span>|</span>
-    <span>Privacy Policy</span>
-    <span>|</span>
-    <span>&copy;2023 All Rights Reserved</span>
-    <span class="Version"> version 1.0</span>
-  </div>
-  </div>
+    <!-- Portfolio -->
+    <section class="portfolioPage" id="portfolio">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-light font-weight-bolder">Portfolio</h2>
+          <p class="text-muted">Explore my recent projects and work</p>
+        </div>
+        
+        <!-- Project Filter Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="portfolio-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#all-projects">All Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#web-projects">Web Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#app-projects">Applications</a>
+          </li>
+        </ul>
+        
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="all-projects">
+            <div class="row">
+              <!-- Project 1 -->
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card h-100">
+                  <img src="img/first.PNG" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">E-Commerce Platform</h5>
+                    <p class="card-text">A full-stack e-commerce solution with React and Node.js</p>
+                    <div class="tech-tags mb-3">
+                      <span class="badge badge-primary mr-1">React</span>
+                      <span class="badge badge-secondary mr-1">Node.js</span>
+                      <span class="badge badge-info">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://crigo.vercel.app/" target="_blank" class="btn btn-primary btn-sm">View Project</a>
+                      <a href="#" class="btn btn-outline-primary btn-sm ml-2">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project 2 -->
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card h-100">
+                  <img src="img/two.PNG" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Task Management App</h5>
+                    <p class="card-text">A responsive task management application with real-time updates</p>
+                    <div class="tech-tags mb-3">
+                      <span class="badge badge-primary mr-1">Vue.js</span>
+                      <span class="badge badge-secondary mr-1">Express</span>
+                      <span class="badge badge-info">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://capstone-2-ape.onrender.com" target="_blank" class="btn btn-primary btn-sm">View Project</a>
+                      <a href="#" class="btn btn-outline-primary btn-sm ml-2">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project 3 -->
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card h-100">
+                  <img src="img/three.PNG" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">A modern, responsive portfolio website with smooth animations</p>
+                    <div class="tech-tags mb-3">
+                      <span class="badge badge-primary mr-1">HTML5</span>
+                      <span class="badge badge-secondary mr-1">CSS3</span>
+                      <span class="badge badge-info">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://joram-ape.github.io/webportfolio/" target="_blank" class="btn btn-primary btn-sm">View Project</a>
+                      <a href="#" class="btn btn-outline-primary btn-sm ml-2">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="web-projects">
+            <div class="row">
+              <div class="col-12 text-center text-muted py-5">
+                <p>Web design projects will be displayed here</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="app-projects">
+            <div class="row">
+              <div class="col-12 text-center text-muted py-5">
+                <p>Application projects will be displayed here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap Script link -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-    crossorigin="anonymous"></script>
+    <section class="bg-dark text-light" id="email-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-light font-weight-bolder">Get In Touch</h2>
+          <p class="text-muted">Have a project in mind? Let's work together!</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="bi bi-envelope-fill text-primary"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>joram.l.ape@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-geo-alt-fill text-primary"></i>
+                <div>
+                  <h5>Location</h5>
+                  <p>Sipalay City, Negros Occidental, Philippines</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-phone-fill text-primary"></i>
+                <div>
+                  <h5>Phone</h5>
+                  <p>+639 469 548 685</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="contact-form-wrapper">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="senderName">Your Name *</label>
+                  <input type="text" class="form-control" id="senderName" name="name" placeholder="Enter your name" required />
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email *</label>
+                  <input type="email" class="form-control" id="senderEmail" name="email" placeholder="Enter your email" required />
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                  <label for="emailSubject">Subject</label>
+                  <input type="text" class="form-control" id="emailSubject" name="subject" placeholder="What's this about?" />
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                  <label for="emailMessage">Your Message *</label>
+                  <textarea class="form-control" id="emailMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                  <div class="invalid-feedback"></div>
+                </div>
+                
+                <div class="form-status text-center mt-3"></div>
+                
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-send mr-2"></i>Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    $(document).ready(function () {
-      $(".navbar-nav a").click(function () {
-        $(".navbar-nav a").removeClass("active");
-        $(this).addClass("active");
+    <!-- start footer -->
+    <footer class="pt-3 pb-3 ml-4 shadow text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span>Personal Portfolio</span>
+            <span class="mx-2">|</span>
+            <a href="#" class="text-light">Privacy Policy</a>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <span>&copy;2023 All Rights Reserved</span>
+            <span class="Version ml-2">v1.0</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Navbar scroll effect
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+          } else {
+            $('.navbar').removeClass('scrolled');
+          }
+        });
+        
+        // Smooth scrolling for navigation links
+        $(".navbar-nav a, .hero-buttons a").click(function () {
+          var target = $(this).attr('href');
+          if (target.startsWith('#')) {
+            $('html, body').animate({
+              scrollTop: $(target).offset().top - 70
+            }, 800);
+          }
+        });
+        
+        // Active nav link highlighting
+        $(".navbar-nav a").click(function () {
+          $(".navbar-nav a").removeClass("active");
+          $(this).addClass("active");
+        });
+        
+        // Enhanced contact form handling
+        $("#contactForm").submit(function(e) {
+          e.preventDefault();
+          
+          // Clear previous errors
+          $('.invalid-feedback, .form-status').hide();
+          $('.form-control').removeClass('is-invalid');
+          
+          // Get form data
+          const formData = {
+            name: $('#senderName').val().trim(),
+            email: $('#senderEmail').val().trim(),
+            subject: $('#emailSubject').val().trim(),
+            message: $('#emailMessage').val().trim()
+          };
+          
+          // Validation
+          let isValid = true;
+          let errors = [];
+          
+          if (!formData.name) {
+            $('#senderName').addClass('is-invalid').next('.invalid-feedback').text('Name is required').show();
+            isValid = false;
+          }
+          
+          if (!formData.email || !isValidEmail(formData.email)) {
+            $('#senderEmail').addClass('is-invalid').next('.invalid-feedback').text('Valid email is required').show();
+            isValid = false;
+          }
+          
+          if (!formData.message) {
+            $('#emailMessage').addClass('is-invalid').next('.invalid-feedback').text('Message is required').show();
+            isValid = false;
+          }
+          
+          if (isValid) {
+            // Show loading state
+            const submitBtn = $(this).find('button[type="submit"]');
+            const originalText = submitBtn.html();
+            submitBtn.html('<i class="bi bi-hourglass-split mr-2"></i>Sending...').prop('disabled', true);
+            
+            // Simulate form submission (replace with actual email service)
+            setTimeout(function() {
+              submitBtn.html('<i class="bi bi-check-circle mr-2"></i>Message Sent!').prop('disabled', false);
+              $('.form-status').addClass('success').text('Thank you for your message! I\'ll get back to you soon.').show();
+              
+              // Reset form
+              $('#contactForm')[0].reset();
+              
+              // Hide success message after 5 seconds
+              setTimeout(function() {
+                $('.form-status').fadeOut();
+                submitBtn.html(originalText);
+              }, 5000);
+            }, 1500);
+          }
+        });
+        
+        function isValidEmail(email) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        }
       });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".nav a").click(function () {
-        $(".nav a").removeClass("active");
-        $(this).addClass("active");
-      })
-    })
-  </script>
-  <script src="js/hide.js"></script>
+    </script>
+    <script src="js/hide.js"></script>
 </body>
 
 </html>
