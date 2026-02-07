@@ -332,6 +332,7 @@ a:hover {
 .aboutPage {
   padding: 100px 0;
   background: linear-gradient(135deg, var(--bg-section), rgba(0, 0, 0, 0.3));
+  min-height: 100vh;
 }
 
 .about-content {
@@ -716,13 +717,6 @@ li a:hover:not(.active) {
 
 .homePageSide {
   padding-top: 100px;
-}
-.aboutPage {
-  height: 100vh;
-}
-
-.aboutPage-top {
-  top: 100px;
 }
 
 .btn-primary {
